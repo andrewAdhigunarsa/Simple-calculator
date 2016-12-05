@@ -1,0 +1,61 @@
+<html>
+<head><title>Calculator</title>
+<link rel="stylesheet" type="text/css" href="calculator.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" > </script>
+<script src="calculator.js"></script>
+</head>
+
+<body>
+	<header>
+			<h1>The Calculator Project</h1>
+
+	</header>
+
+		<button id="calculatorButton">Press Me</button>
+
+	<div id="calculator">
+		<div id="display"></div>
+		<div id="line6">
+			<div id="C" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">C</div>
+			<div id="timer" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">T</div>
+			<div id="clock" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);" sytle="padding:5px;">CL</div>
+		</div>
+		<div id="line1">
+			<div id="1" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">1</div>
+			<div id="2" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">2</div>
+			<div id="3" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">3</div>
+		</div>
+		<div id="line2">
+			<div id="4" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">4</div>
+			<div id="5" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">5</div>
+			<div id="6" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">6</div>
+		</div>
+		<div id="line3">
+			<div id="7" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">7</div>
+			<div id="8" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">8</div>
+			<div id="9" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">9</div>
+		</div>
+		<div id="line4">
+			<div id="0" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">0</div>
+			<div id="+" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">+</div>
+			<div id="-" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">-</div>
+		</div>
+		<div id="line5">
+			<div id="*" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">*</div>
+			<div id="/" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">&divide;</div>
+			<div id="=" class="button" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">=</div>
+		</div>
+		<div id="line7">
+			<div id="temp" class="tempbutton" onMouseDown="buttonPress(id);" onMouseUp="buttonRelease(id);">Temperature</div>
+		</div>
+
+	</div>
+
+	<footer id="footer">
+			<p>by Andrew Adhigunarsa</p>
+
+	</footer>
+<script>clearAll();</script>
+
+</body>
+</html>

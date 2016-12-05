@@ -1,0 +1,131 @@
+html, body{margin:0;
+			font-family: arial;
+			}
+header {height: 70px;
+					width: 100%;
+					background-color: #39545B;}
+
+header	h1 {text-align: center;
+			color: white;
+			padding: 10px;
+			font-size: 2.5em;}
+
+
+#calculator {
+min-width:150px;
+max-width: 300px;
+min-height:200px;
+border-radius:10px;
+padding-bottom: 10px;
+
+background: linear-gradient(#9dd2ea, #8bceec);
+border-radius: 5px;
+margin: auto;
+position: fixed;
+top:28%;
+left: 41%;
+box-shadow: 0 5px 0 grey;
+
+}
+
+#display {
+border-radius:5px;
+width:80%;
+min-height:25px;
+margin:auto;
+margin-top:15px;
+background-color:rgb(240,240,0);
+text-align:right;
+padding:5px;
+font-family: arial;
+
+}
+
+#line1,#line2,#line3,#line4,#line5,#line6, #line7 {
+padding:10px;
+margin:auto;
+margin-top:5px;
+width:90%;
+border:solid 0px;
+}
+
+.button {
+border-radius:5px;
+padding:5px;
+margin:3px;
+cursor:pointer;
+background-color: #FAFAFA;
+display: inline-block;
+float: left;
+width: 35px;
+height: 20px;
+padding:5px ;
+border-radius: 5px;
+text-align: center;
+margin: 5px;
+box-shadow: 0 5px 0 grey;
+}
+
+/* This is to get different size for the temperature button*/
+.tempbutton {
+border-radius:5px;
+padding:5px;
+margin:3px;
+cursor:pointer;
+background-color: #FAFAFA;
+display: inline-block;
+float: left;
+width: 87%;
+height: 20px;
+padding:5px ;
+border-radius: 5px;
+text-align: center;
+margin: 5px;
+box-shadow: 0 5px 0 grey;
+}
+
+#C {background-color: orange;}
+#timer,#clock {background-color: #77dd77;}
+
+
+
+.button:hover {
+background-color:rgb(255,255,0);
+}
+
+.tempbutton:hover {
+background-color:rgb(255,255,0);
+}
+
+
+footer{height: 50px;
+		width: 100%;
+		background-color: darkgrey;
+		bottom: 0;
+		position: fixed;
+		}
+footer p{text-align: center;
+			color: white;}
+
+
+/* This is to hide the calulator at start */
+#calculator {
+	display: none;
+}
+
+/* this is to style the call calculator button */
+
+button#calculatorButton {
+	padding: 10px;
+	font-size: 1.5em;
+	color: white;
+	border: 1px solid white;
+	background-color: skyblue;
+	border-radius: 5%;
+	margin: 50px auto 0 auto;
+	text-align: center;
+}
+
+#calculatorButton:active {
+	background-color: grey;
+}
