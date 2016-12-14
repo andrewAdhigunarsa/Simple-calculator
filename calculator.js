@@ -7,16 +7,16 @@ var timerRunning=0; //FLAG to show if the timer is running (0=NO)
 var clockRunning=0; //Flag to show if the clock is running (0=NO, 1=YES)
 var clockID=0; //ID of clockTimer
 var tempMode=0; //Flag to indicate if in Temp mode
-
+  
   function getTemperature(){
     $(document).ready(function(){
       $("#display").load("http://www.soundingboard.com.au/iot/temperature.php");
     });
-
+    
   }
 
   function doCalculation() {
-
+   
     switch(operator) {
       case "+":result=result+parseFloat(currentNumber);
       break;
@@ -29,16 +29,16 @@ var tempMode=0; //Flag to indicate if in Temp mode
       }
     document.getElementById("display").innerHTML=result.toString(); //Display the result
   }
-
+  
   function clearAll() {
 	  currentNumber="";
 	  result=0;
 	  operator="";
 	  document.getElementById("display").innerHTML="0";
   }
-
+  
   //WHY DOESN'T THIS WORK? clearAll(); //Reset the calculator
-
+  
 //Function buttonPress
 //Called when a calculator button is pressed
 //Receives: the ID of the button pressed
@@ -152,20 +152,20 @@ function leadingZero(number){
     var minutes=myTime.getMinutes();
     var seconds=myTime.getSeconds();
     //if (minutes<10) minutes="0"+minutes;//add a leading zero if needed
-    //if (hours<10) hours="0"+hours;
+    //if (hours<10) hours="0"+hours; 
     //alert("it is" + seconds);
     var ampm=""; //is it morning or afternoon?
     if (hours<12) ampm="am"; //morning is am
     else ampm = "pm"; //morning is pm
-    if (hours>12) hours=hours-12; //this will convert it to 12 hours clock
+    if (hours>12) hours=hours-12; //this will convert it to 12 hours clock 
 
-
+    
     var timeString=""; //this will hold the time string
 
     if (seconds%2==0)timeString=leadingZero(hours)+"<span style='visibility:visible;'>:</span>"+leadingZero(minutes)+ampm;//concatenate the string for the display
     else timeString=leadingZero(hours)+"<span style='visibility:hidden;'>:</span>"+leadingZero(minutes)+ampm;//span is used to display on off the colon cosistently
     document.getElementById("display").innerHTML="<b>"+timeString+"</b>";
-
+   
 
   }
 
@@ -189,8 +189,12 @@ function leadingZero(number){
 
  //function for button to call the calculator
 
-  $(document).ready(function() {
-  $("#calculatorButton").click( function() {
-   $("#calculator").toggle(500);
- });
-});
+  $(document).ready(function() { 
+ $("#calculatorButton").click( function() { 
+   $("#calculator").toggle(500);  
+ }); 
+}); 
+
+
+
+

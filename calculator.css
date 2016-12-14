@@ -18,7 +18,7 @@ min-height:200px;
 border-radius:10px;
 padding-bottom: 10px;
 
-background: linear-gradient(#9dd2ea, #8bceec);
+background: linear-gradient(#9dd2ea, #8bceec); 
 border-radius: 5px;
 margin: auto;
 position: fixed;
@@ -115,17 +115,10 @@ footer p{text-align: center;
 
 /* this is to style the call calculator button */
 
-button#calculatorButton {
-	padding: 10px;
-	font-size: 1.5em;
-	color: white;
-	border: 1px solid white;
-	background-color: skyblue;
-	border-radius: 5%;
-	margin: 50px auto 0 auto;
-	text-align: center;
-}
-
-#calculatorButton:active {
-	background-color: grey;
+#calculatorButton {
+	width: 100px;
+	height: 50px;
+	display: inline-block;
+	margin-left: 45%;
+	margin-top: 80px;
 }
